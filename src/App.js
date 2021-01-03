@@ -6,7 +6,20 @@ export default function App() {
   return (
    <Router> 
    <div className="app">
-     <h1> i am web developer </h1>
+     <Switch>
+<Route path="/checkout"> 
+<h1> check out </h1>
+</Route>
+
+<Route path="/login">
+ <h1> login page </h1> 
+</Route>
+
+<Route path="/"> 
+<h1>
+  this is the Home page </h1></Route>
+  
+     </Switch>
     </div>
     </Router>
   );

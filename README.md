@@ -7,7 +7,7 @@ thats how we can authenticate
 
 - Firebase hosting
   !-on the App.js--> React Router : multiple webpages on a sigle page app.
-  served at one time but then gets plit based on the URL.(deal with logIn, checkOut, etc)
+  served at one time but then gets plit based on the URL.(deal with logIn, checkOut, etc). Going to diferent pages with out the need to refresh or reload!
   --> npm install react-router-dom
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
