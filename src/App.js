@@ -1,12 +1,15 @@
-
+import React from "react";
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-     <h1> i am a web developer </h1>
+   <Router> 
+   <div className="app">
+     <h1> i am web developer </h1>
     </div>
+    </Router>
   );
 }
 
-export default App;
+

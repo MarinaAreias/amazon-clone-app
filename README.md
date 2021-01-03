@@ -1,5 +1,15 @@
 # Getting Started with Create React App
 
+-REACT JS for front-end
+-Context API(React)
+-Firebase (user authentication + database).
+thats how we can authenticate
+
+- Firebase hosting
+  !-on the App.js--> React Router : multiple webpages on a sigle page app.
+  served at one time but then gets plit based on the URL.(deal with logIn, checkOut, etc)
+  --> npm install react-router-dom
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
