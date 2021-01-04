@@ -7,7 +7,7 @@ export const initialState = {
 //to calle it and give the basket total
 //reduce takes a function
 export const getBasketTotal = (basket) =>
-  basket?.reduce((amount, item) => (item.price = amount), 0);
+  basket?.reduce((amount, item) => item.price + amount, 0);
 
 function reducer(state, action) {
   switch (action.type) {

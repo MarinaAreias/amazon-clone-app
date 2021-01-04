@@ -6,6 +6,7 @@ import { getBasketTotal } from "./reducer";
 
 function Subtotal() {
   const [{ basket }, dispatch] = useStateValue();
+
   return (
     <div className="subtotal">
       <CurrencyFormat
@@ -13,7 +14,7 @@ function Subtotal() {
           <>
             {/* because basket was not defined we had the const from DataLayer */}
             <p>
-              Subtotal ({basket.length} items): <strong>{`${value}`}</strong>
+              Subtotal ({basket.length} items): <strong>{value}</strong>
             </p>
             <small className="subtotal__gift">
               <input type="checkbox" /> This order contains a gift{" "}
