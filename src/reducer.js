@@ -11,6 +11,13 @@ export const getBasketTotal = (basket) =>
 
 function reducer(state, action) {
   switch (action.type) {
+    //this case will update the user when loggin and out
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user,
+      };
+
     case "ADD_TO_BASKET":
       //LOGIC FOR adding item to basket
       return {
