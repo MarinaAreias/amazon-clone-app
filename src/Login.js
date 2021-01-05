@@ -4,6 +4,8 @@ import { Link, useHistory } from "react-router-dom";
 import { auth } from "./firebase";
 
 function Login() {
+  //this will be the hook to redirect to the homepage
+  const history = useHistory();
   //see React docs on useState hook
   //with this we can go to input and use the values
   const [email, setEmail] = useState("");
@@ -18,6 +20,7 @@ function Login() {
       .signInWithEmailAndPassword(email, password)
       .then((auth) => {
         //logged in, redirect to home page.
+        history.push("/");
       })
       .catch((event) => alert(event.message));
   };
